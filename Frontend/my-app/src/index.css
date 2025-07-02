@@ -1,0 +1,83 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    font-size: 20px;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    padding: 32px 48px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.container > h1{
+    margin-bottom: 20px;
+}
+
+.container > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.container input{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+    font-size: 12px;
+    font-size: italic;
+}
+
+button {
+  background: linear-gradient(to right, #4f46e5, #3b82f6); 
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 12px 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+}
+button:active {
+  background: white;
+  color: #3b82f6;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: scale(0.97);
+}
