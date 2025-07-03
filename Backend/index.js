@@ -14,11 +14,11 @@ const PORT = process.env.PORT || 8000;
 //     res.send('PONG');
 // });
 
-//app.get('/', (req, res) => {
-    //return res.json({
-     //   message: "Hi welcome there, this is my node js project!!"
-   // })
-//})
+app.get('/', (req, res) => {
+    return res.json({
+        message: "Hi welcome there, this is my node js project!!"
+    })
+})
 
 app.use(bodyParser.json());
 app.use(cors());
