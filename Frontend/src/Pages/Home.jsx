@@ -24,7 +24,7 @@ function Home() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('http://localhost:8080/products', {
+      const res = await fetch('https://auth-ayb7.onrender.com/products', {
         method: 'GET',
         headers: {
           Authorization: `${token}`,

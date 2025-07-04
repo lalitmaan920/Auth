@@ -29,7 +29,7 @@ function Signup() {
       return handleError('Password must be at least 4 characters long');
     }
     try {
-      const url = "http://localhost:8080/auth/signup";
+      const url = "https://auth-ayb7.onrender.com/auth/signup";
       const response = await fetch(url, {
         method: "POST",
         headers: {
